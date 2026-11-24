@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="ceb">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Anniversary 🌻💛</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      min-height: 100svh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, #151104 0%, #0a0802 55%, #020202 100%);
+      font-family: "Cormorant Garamond", Georgia, serif;
+      color: #fff4d4;
+      position: relative;
+    }
+
+    /* ---------- Cyber-Romantic Glow & Particles ---------- */
+    .glow {
+      position: absolute;
+      width: clamp(420px, 70vw, 780px);
+      height: clamp(420px, 70vw, 780px);
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(circle, rgba(255, 215, 0, .22), rgba(0, 255, 120, .07) 48%, transparent 70%);
+      animation: pulse 5s ease-in-out infinite;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    @keyframes pulse {
+      50% {
+        transform: translate(-50%, -50%) scale(1.12);
+        opacity: .85;
+      }
+    }
+
+    .bokeh span {
+      position: absolute;
+      left: var(--x);
+      bottom: -60px;
+      width: var(--s);
+      height: var(--s);
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 230, 100, .4), rgba(255, 215, 0, 0) 70%);
+      animation: rise var(--t) linear infinite;
+      animation-delay: var(--dl);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    @keyframes rise {
+      to {
+        transform: translateY(-115vh);
+      }
+    }
+
+    /* ---------- Main Layout (Dead-Center Blooming Flower) ---------- */
+    main {
+      position: relative;
+      width: 100%;
+      height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      z-index: 2;
+    }
+
+    /* Title at Top */
+    .title-wrap {
+      position: absolute;
+      top: clamp(14px, 3.8svh, 42px);
+      left: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 5;
+      pointer-events: none;
+      padding: 0 16px;
+    }
+
+    h1 {
+      font-family: "Great Vibes", cursive;
+      font-weight: 400;
+      font-size: clamp(2.8rem, 8vw, 4.6rem);
+      line-height: 1.1;
+      background: linear-gradient(90deg, #ffe082, #ffffff, #ffd54f, #ffffff, #ffe082);
+      background-size: 200% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: fadeUp 1.8s 0.3s both, shimmer 7s linear infinite;
+      text-shadow: 0 4px 25px rgba(255, 215, 0, 0.3);
+    }
+
+    .tagline {
+      font-family: "JetBrains Mono", monospace;
+      font-size: clamp(0.75rem, 2.2vw, 0.95rem);
+      color: #00ff88;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      opacity: 0.9;
+      margin-top: 4px;
+      text-shadow: 0 0 8px rgba(0, 255, 136, 0.6);
+      animation: fadeUp 1.8s 0.8s both;
+    }
+
+    @keyframes shimmer {
+      to {
+        background-position: -200% 0;
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+    }
+
+    /* ---------- Blooming ASCII Flower Video (Center) ---------- */
+    .bloom-center {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 680px;
+      padding: 0 16px;
+    }
+
+    .video-card {
+      position: relative;
+      width: min(92vw, 560px);
+      aspect-ratio: 4 / 3;
+      border-radius: 18px;
+      background: #000;
+      overflow: hidden;
+      box-shadow:
+        0 0 45px rgba(255, 215, 0, 0.28),
+        0 0 15px rgba(0, 255, 136, 0.2),
+        inset 0 0 20px rgba(0, 0, 0, 0.8);
+      border: 1px solid rgba(255, 215, 0, 0.35);
+      cursor: pointer;
+      transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s;
+      animation: videoFade 2s 0.5s both, floatSway 6s ease-in-out infinite;
+    }
+
+    .video-card:hover {
+      transform: scale(1.02);
+      box-shadow:
+        0 0 60px rgba(255, 215, 0, 0.45),
+        0 0 25px rgba(0, 255, 136, 0.35);
+    }
+
+    @keyframes videoFade {
+      from {
+        opacity: 0;
+        transform: scale(0.92) translateY(15px);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    @keyframes floatSway {
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(-0.5deg);
+      }
+
+      50% {
+        transform: translateY(-8px) rotate(0.5deg);
+      }
+    }
+
+    .video-card video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .video-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(rgba(18, 16, 16, 0) 50%,
+          rgba(0, 0, 0, 0.25) 50%);
+      background-size: 100% 4px;
+      pointer-events: none;
+      opacity: 0.6;
+    }
+
+    /* Sound Badge inside Video Card */
+    .sound-badge {
+      position: absolute;
+      bottom: 12px;
+      right: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: rgba(10, 8, 3, 0.72);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 215, 0, 0.45);
+      color: #ffe680;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      z-index: 10;
+      transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      user-select: none;
+    }
+
+    .sound-badge:hover {
+      background: rgba(255, 215, 0, 0.28);
+      border-color: #ffd54f;
+      transform: scale(1.06);
+      box-shadow: 0 0 14px rgba(255, 215, 0, 0.45);
+    }
+
+    .sound-badge.active {
+      border-color: #00ff88;
+      color: #00ff88;
+      box-shadow: 0 0 14px rgba(0, 255, 136, 0.35);
+    }
+
+    .sound-badge span {
+      pointer-events: none;
+    }
+
+    /* ---------- Action Buttons at Bottom (Sleek, Refined, Compact) ---------- */
+    .action-wrap {
+      position: absolute;
+      bottom: clamp(16px, 4svh, 38px);
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      z-index: 5;
+      width: max-content;
+      max-width: 95vw;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 6px 18px;
+      height: 35px;
+      cursor: pointer;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: .06em;
+      border-radius: 999px;
+      backdrop-filter: blur(12px);
+      transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+      animation: fadeUp 1.8s 1.2s both;
+      text-decoration: none;
+      user-select: none;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.45);
+    }
+
+    .btn:active {
+      transform: scale(0.97);
+    }
+
+    .btn-photos {
+      border: 1px solid rgba(255, 215, 0, 0.45);
+      background: rgba(255, 215, 0, 0.1);
+      color: #ffe680;
+      box-shadow: 0 0 14px rgba(255, 215, 0, 0.2);
+    }
+
+    .btn-photos:hover {
+      background: rgba(255, 215, 0, 0.25);
+      border-color: #ffd54f;
+      color: #ffffff;
+      box-shadow: 0 0 24px rgba(255, 215, 0, 0.5), 0 0 10px rgba(0, 255, 136, 0.3);
+      transform: translateY(-2px);
+    }
+
+    .btn-letter {
+      border: 1px solid rgba(255, 130, 165, 0.45);
+      background: rgba(255, 100, 140, 0.12);
+      color: #ffd1dc;
+      box-shadow: 0 0 14px rgba(255, 100, 140, 0.2);
+    }
+
+    .btn-letter:hover {
+      background: rgba(255, 100, 140, 0.28);
+      border-color: #ff9bb0;
+      color: #ffffff;
+      box-shadow: 0 0 24px rgba(255, 100, 140, 0.5), 0 0 10px rgba(255, 215, 0, 0.3);
+      transform: translateY(-2px);
+    }
+
+    .btn-icon {
+      font-size: 0.95rem;
+      line-height: 1;
+      display: inline-block;
+      transition: transform 0.2s ease;
+    }
+
+    .btn:hover .btn-icon {
+      transform: scale(1.15);
+    }
+
+    /* ---------- Falling ASCII Code Particles ---------- */
+    .fall {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 3;
+    }
+
+    .fall span {
+      position: absolute;
+      top: -30px;
+      left: var(--x);
+      font-family: "JetBrains Mono", monospace;
+      font-size: var(--sz, 14px);
+      color: var(--col, #ffe082);
+      text-shadow: 0 0 8px currentColor;
+      animation: codeFall var(--t) linear infinite;
+      animation-delay: var(--dl);
+      opacity: 0.8;
+      user-select: none;
+    }
+
+    @keyframes codeFall {
+      0% {
+        transform: translate(0, -5vh) rotate(0);
+        opacity: 0;
+      }
+
+      15% {
+        opacity: 0.85;
+      }
+
+      85% {
+        opacity: 0.85;
+      }
+
+      100% {
+        transform: translate(30px, 110vh) rotate(180deg);
+        opacity: 0;
+      }
+    }
+
+    /* ---------- Shared Modal Styles ---------- */
+    .modal-container {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      display: grid;
+      place-items: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .45s ease, visibility .45s ease;
+      padding: 20px;
+    }
+
+    .modal-container.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-backdrop {
+      position: absolute;
+      inset: 0;
+      cursor: pointer;
+      background: rgba(6, 5, 2, .88);
+      backdrop-filter: blur(12px);
+    }
+
+    .modal-panel {
+      position: relative;
+      background: #0f0d06;
+      border: 1px solid rgba(255, 215, 0, 0.35);
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9), 0 0 30px rgba(255, 215, 0, 0.2);
+      transform: translateY(25px) scale(.97);
+      transition: transform .5s cubic-bezier(.2, .8, .2, 1);
+      overflow: hidden;
+      max-height: 88vh;
+      display: flex;
+      flex-direction: column;
+      z-index: 2;
+    }
+
+    .modal-container.active .modal-panel {
+      transform: none;
+    }
+
+    .modal-header {
+      padding: 24px 24px 12px;
+      text-align: center;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 215, 0, 0.15);
+      flex-shrink: 0;
+    }
+
+    .modal-header h2 {
+      font: 400 clamp(2.2rem, 5.5vw, 3.2rem) "Great Vibes", cursive;
+      color: #ffe082;
+      text-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+      line-height: 1.15;
+    }
+
+    .modal-header small {
+      display: block;
+      opacity: .8;
+      font-size: 1.05rem;
+      font-style: italic;
+      color: #fff4d4;
+      margin-top: 4px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 14px;
+      right: 16px;
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1.25rem;
+      background: rgba(255, 255, 255, .1);
+      color: #ffe082;
+      border: 1px solid rgba(255, 215, 0, 0.3);
+      transition: background 0.25s, transform 0.25s;
+    }
+
+    .close-btn:hover {
+      background: rgba(255, 215, 0, .3);
+      transform: rotate(90deg);
+    }
+
+    /* ---------- Upgraded Photo Gallery (Scrapbook Grid) ---------- */
+    .gallery-panel {
+      width: min(100%, 1020px);
+    }
+
+    .gallery-body {
+      padding: 22px 20px 28px;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #ffd54f rgba(255, 255, 255, 0.05);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 24px;
+      padding: 8px 6px;
+    }
+
+    .polaroid {
+      position: relative;
+      background: #fffdf5;
+      color: #3d2f0a;
+      border-radius: 4px;
+      padding: 12px 12px 14px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.7);
+      cursor: pointer;
+      transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s;
+      rotate: var(--tilt, -1.5deg);
+    }
+
+    .polaroid:nth-child(even) {
+      --tilt: 1.8deg;
+    }
+
+    .polaroid:nth-child(3n) {
+      --tilt: -2.2deg;
+    }
+
+    .polaroid:nth-child(4n) {
+      --tilt: 1.2deg;
+    }
+
+    .polaroid:hover {
+      rotate: 0deg;
+      transform: translateY(-8px) scale(1.04);
+      box-shadow: 0 20px 36px rgba(0, 0, 0, 0.85), 0 0 20px rgba(255, 215, 0, 0.3);
+      z-index: 10;
+    }
+
+    /* Washi tape decoration on top of polaroids */
+    .polaroid::before {
+      content: "";
+      position: absolute;
+      top: -9px;
+      left: 50%;
+      transform: translateX(-50%) rotate(var(--tape-rot, -1deg));
+      width: 50px;
+      height: 16px;
+      background: rgba(255, 220, 100, 0.65);
+      border: 1px dashed rgba(200, 160, 50, 0.5);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      z-index: 3;
+    }
+
+    .polaroid:nth-child(even)::before {
+      --tape-rot: 2deg;
+      background: rgba(255, 170, 190, 0.65);
+      border-color: rgba(220, 130, 150, 0.5);
+    }
+
+    .polaroid-frame {
+      position: relative;
+      aspect-ratio: 4 / 5;
+      background: var(--img, none) center / cover no-repeat, linear-gradient(145deg, #fceda2, #dfb844);
+      border-radius: 2px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .polaroid-frame .placeholder-heart {
+      font-size: 2.8rem;
+      opacity: 0.9;
+      filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+      transition: transform 0.3s;
+    }
+
+    .polaroid:hover .placeholder-heart {
+      transform: scale(1.2);
+    }
+
+    .polaroid-badge {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 2px 7px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-family: "JetBrains Mono", monospace;
+      opacity: 0;
+      transition: opacity 0.25s;
+    }
+
+    .polaroid:hover .polaroid-badge {
+      opacity: 1;
+    }
+
+    .polaroid figcaption {
+      font: 400 1.65rem "Great Vibes", cursive;
+      text-align: center;
+      padding: 10px 4px 4px;
+      color: #3b280b;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* ---------- Love Letter Modal (Simple & Elegant) ---------- */
+    .letter-panel {
+      width: min(90vw, 440px);
+      background: rgba(14, 12, 8, 0.95);
+      border: 1px solid rgba(255, 215, 100, 0.25);
+      border-radius: 20px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 215, 0, 0.08);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .letter-panel .close-btn {
+      top: 14px;
+      right: 16px;
+      width: 32px;
+      height: 32px;
+      font-size: 1rem;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 215, 0, 0.2);
+      color: #ffe082;
+      z-index: 10;
+    }
+
+    .letter-panel .close-btn:hover {
+      background: rgba(255, 215, 0, 0.2);
+      color: #ffffff;
+    }
+
+    .letter-content {
+      padding: clamp(34px, 7vw, 44px) clamp(24px, 6vw, 36px) clamp(30px, 6vw, 38px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+      max-height: 84vh;
+      overflow-y: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .letter-content::-webkit-scrollbar {
+      display: none;
+    }
+
+    .letter-title {
+      font-family: "Great Vibes", cursive;
+      font-weight: 400;
+      font-size: clamp(2.3rem, 6.5vw, 3rem);
+      color: #ffe082;
+      line-height: 1.15;
+      margin: 0;
+      text-shadow: 0 2px 12px rgba(255, 215, 0, 0.2);
+    }
+
+    .letter-body {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 0;
+    }
+
+    .letter-text {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: clamp(1.15rem, 3.6vw, 1.28rem);
+      line-height: 1.85;
+      color: #fff4d4;
+      margin: 0;
+      letter-spacing: 0.02em;
+    }
+
+    .letter-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .letter-sign {
+      font-family: "Great Vibes", cursive;
+      font-size: clamp(1.9rem, 5vw, 2.4rem);
+      color: #ffe082;
+      line-height: 1.2;
+      text-shadow: 0 2px 12px rgba(255, 215, 0, 0.2);
+    }
+
+    .letter-decor {
+      font-size: 1.25rem;
+      filter: drop-shadow(0 2px 8px rgba(255, 215, 0, 0.2));
+    }
+
+    /* ---------- Lightbox Popup for Full Photo Zoom ---------- */
+    .lightbox-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 150;
+      background: rgba(0, 0, 0, 0.94);
+      backdrop-filter: blur(14px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.35s ease, visibility 0.35s ease;
+      cursor: zoom-out;
+    }
+
+    .lightbox-modal.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .lightbox-img-wrap {
+      max-width: 90vw;
+      max-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: default;
+    }
+
+    .lightbox-img-wrap img {
+      max-width: 100%;
+      max-height: 72vh;
+      border-radius: 8px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9), 0 0 25px rgba(255, 215, 0, 0.35);
+      border: 2px solid rgba(255, 215, 0, 0.4);
+      object-fit: contain;
+    }
+
+    .lightbox-caption {
+      margin-top: 14px;
+      font: 400 2rem "Great Vibes", cursive;
+      color: #ffe082;
+      text-align: center;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-size: 1.4rem;
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      transition: background 0.25s;
+    }
+
+    .lightbox-close:hover {
+      background: rgba(255, 215, 0, 0.4);
+    }
+
+    @media (max-width: 520px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+      }
+
+      .polaroid {
+        padding: 8px 8px 10px;
+      }
+
+      .polaroid figcaption {
+        font-size: 1.35rem;
+      }
+
+      .action-wrap {
+        flex-direction: row;
+        gap: 10px;
+        bottom: clamp(12px, 3svh, 24px);
+      }
+
+      .btn {
+        padding: 5px 14px;
+        height: 31px;
+        font-size: 0.92rem;
+      }
+
+      .letter-content {
+        padding: 26px 20px 24px;
+        gap: 16px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      .video-card,
+      .glow,
+      .bokeh span,
+      h1,
+      .fall span {
+        animation: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="glow"></div>
+
+  <div class="bokeh" aria-hidden="true">
+    <span style="--x:8%;--s:60px;--t:16s;--dl:-2s"></span>
+    <span style="--x:22%;--s:34px;--t:12s;--dl:-8s"></span>
+    <span style="--x:40%;--s:80px;--t:20s;--dl:-12s"></span>
+    <span style="--x:62%;--s:44px;--t:14s;--dl:-5s"></span>
+    <span style="--x:78%;--s:70px;--t:18s;--dl:-1s"></span>
+    <span style="--x:92%;--s:38px;--t:13s;--dl:-9s"></span>
+  </div>
+
+  <main>
+    <div class="title-wrap">
+      <h1>Happy Anniversary</h1>
+    </div>
+
+    <div class="bloom-center">
+      <div class="video-card" id="flowerCard" title="I-click para mo-bloom pag-usab!">
+        <video id="bloomVideo" src="blooming.mp4" autoplay loop muted playsinline></video>
+        <audio id="bgMusic" src="music.mp3" loop preload="auto"></audio>
+        <button id="soundBtn" class="sound-badge" type="button" title="Audio ON/OFF">
+          <span class="sound-icon">🔇</span>
+          <span class="sound-text">Audio</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- DUAL BUTTONS: Photos Gallery & Love Letter -->
+    <div class="action-wrap">
+      <button class="btn btn-photos" id="openGalBtn" type="button" title="Among mga Handumanan">
+        <span class="btn-icon">📸</span>
+        <span>Shark</span>
+      </button>
+
+      <button class="btn btn-letter" id="openLetterBtn" type="button" title="Sulat Para Nimo">
+        <span class="btn-icon">💌</span>
+        <span>Sharky</span>
+      </button>
+    </div>
+  </main>
+
+
+  <div class="fall" aria-hidden="true">
+    <span style="--x:5%;--t:10s;--dl:0s;--col:#00ff88;--sz:13px">{ }</span>
+    <span style="--x:14%;--t:13s;--dl:-3s;--col:#ffe082;--sz:16px">#</span>
+    <span style="--x:24%;--t:11s;--dl:-7s;--col:#ffd54f;--sz:14px">🌻</span>
+    <span style="--x:35%;--t:14s;--dl:-2s;--col:#00ff88;--sz:13px">[ ]</span>
+    <span style="--x:45%;--t:9s;--dl:-5s;--col:#ffe082;--sz:16px">+</span>
+    <span style="--x:55%;--t:12s;--dl:-9s;--col:#ffd54f;--sz:15px">💛</span>
+    <span style="--x:66%;--t:15s;--dl:-3s;--col:#00ff88;--sz:14px">&lt;/&gt;</span>
+    <span style="--x:76%;--t:10s;--dl:-6s;--col:#ffe082;--sz:16px">*</span>
+    <span style="--x:86%;--t:13s;--dl:-1s;--col:#ffd54f;--sz:14px">🌻</span>
+    <span style="--x:94%;--t:11s;--dl:-8s;--col:#00ff88;--sz:13px">101</span>
+  </div>
+
+  <!-- ===================== 1. UPGRADED PHOTO GALLERY MODAL ===================== -->
+  <div class="modal-container" id="galleryModal">
+    <div class="modal-backdrop" id="galBackdrop"></div>
+    <section class="modal-panel gallery-panel">
+      <div class="modal-header">
+        <button class="close-btn" id="closeGalBtn" aria-label="Isira">✕</button>
+      </div>
+
+      <div class="gallery-body">
+        <!--
+          PARA MAGDUNGAG UG BAG-ONG HULAGWAY:
+          1. I-copy ang usa ka <figure class="polaroid">...</figure> sa ubos.
+          2. Ilisi ang URL o "photoX.jpg" sa imong hulagway.
+          3. Usba ang caption sa <figcaption>...</figcaption>.
+        -->
+        <div class="gallery-grid">
+
+          <!-- Photo 1 -->
+          <figure class="polaroid"
+            data-full="https://scontent.fcgy2-1.fna.fbcdn.net/v/t1.15752-9/923760533_2421084045297351_7186146348581334207_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_ohc=nyNYB4QxOAUQ7kNvwGkt2dc&_nc_oc=AdrT-XEP1uO_TRhvYJB5sgcF2LXXdFIHa7o8WEED2PAMcX9vmWnj5SWt-asNo6YQV8slj-9B02cW1v3YZBSI2v8z&_nc_zt=23&_nc_ht=scontent.fcgy2-1.fna&_nc_ss=7b6a8&oh=03_Q7cD6wErPYPCQEP3wVY84G6gkEEZ1yyn5_81UGQWEJWSPevrnA&oe=6B2C0339">
+            <div class="polaroid-frame"
+              style="--img:url('https://scontent.fcgy2-1.fna.fbcdn.net/v/t1.15752-9/923760533_2421084045297351_7186146348581334207_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_ohc=nyNYB4QxOAUQ7kNvwGkt2dc&_nc_oc=AdrT-XEP1uO_TRhvYJB5sgcF2LXXdFIHa7o8WEED2PAMcX9vmWnj5SWt-asNo6YQV8slj-9B02cW1v3YZBSI2v8z&_nc_zt=23&_nc_ht=scontent.fcgy2-1.fna&_nc_ss=7b6a8&oh=03_Q7cD6wErPYPCQEP3wVY84G6gkEEZ1yyn5_81UGQWEJWSPevrnA&oe=6B2C0339')">
+              <span class="placeholder-heart"></span>
+              <span class="polaroid-badge">🔍 Zoom</span>
+            </div>
+          </figure>
+
+          <!-- Photo 2 -->
+          <figure class="polaroid"
+            data-full="https://scontent.fcgy2-1.fna.fbcdn.net/v/t1.15752-9/928374894_1383568770355340_3053546009839254846_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Z9Tee28aO70Q7kNvwFuCp-W&_nc_oc=AdpFSjmmH2eojcqb_XqkMVe01KJA2hv8DaDwCrrRrHObGuGdJAzj61F1WuH6HuxsGfCS-P99TsKjw256NYV7AIqr&_nc_zt=23&_nc_ht=scontent.fcgy2-1.fna&_nc_ss=7b6a8&oh=03_Q7cD6wE5JjaPeJ6_W1McJ2KlDaA45_j6eQjYBcVFxi7s_PyPRQ&oe=6B2C0954">
+            <div class="polaroid-frame"
+              style="--img:url('https://scontent.fcgy2-1.fna.fbcdn.net/v/t1.15752-9/928374894_1383568770355340_3053546009839254846_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Z9Tee28aO70Q7kNvwFuCp-W&_nc_oc=AdpFSjmmH2eojcqb_XqkMVe01KJA2hv8DaDwCrrRrHObGuGdJAzj61F1WuH6HuxsGfCS-P99TsKjw256NYV7AIqr&_nc_zt=23&_nc_ht=scontent.fcgy2-1.fna&_nc_ss=7b6a8&oh=03_Q7cD6wE5JjaPeJ6_W1McJ2KlDaA45_j6eQjYBcVFxi7s_PyPRQ&oe=6B2C0954')">
+              <span class="placeholder-heart"></span>
+              <span class="polaroid-badge"></span>
+            </div>
+          </figure>
+
+          <!-- Photo 3 -->
+          <figure class="polaroid"
+            data-full="https://scontent.fdvo2-1.fna.fbcdn.net/v/t1.15752-9/928551924_1126890693458800_4000114352983837066_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_ohc=R0j20xo-SsoQ7kNvwGd3RpO&_nc_oc=AdoCkQ_ObW6heF5_fTRV8bOWh0zedaiHeHwmPVnvo3FcXQqNGBj57MoYzFjHckf_Wq4&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&_nc_ss=7a7a8&oh=03_Q7cD6wE_w_GW4uKRAi0kUBayXnkjrhwUT2CF5GiAhF4aOByrew&oe=6B2CCD0E">
+            <div class="polaroid-frame"
+              style="--img:url('https://scontent.fdvo2-1.fna.fbcdn.net/v/t1.15752-9/928551924_1126890693458800_4000114352983837066_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_ohc=R0j20xo-SsoQ7kNvwGd3RpO&_nc_oc=AdoCkQ_ObW6heF5_fTRV8bOWh0zedaiHeHwmPVnvo3FcXQqNGBj57MoYzFjHckf_Wq4&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&_nc_ss=7a7a8&oh=03_Q7cD6wE_w_GW4uKRAi0kUBayXnkjrhwUT2CF5GiAhF4aOByrew&oe=6B2CCD0E')">
+              <span class="placeholder-heart"></span>
+              <span class="polaroid-badge"></span>
+            </div>
+          </figure>
+
+          <!-- Photo 4 -->
+          <figure class="polaroid"
+            data-full="https://scontent.fdvo2-2.fna.fbcdn.net/v/t1.15752-9/930584853_1119663747342714_5051011891359812370_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_ohc=DB7v7UYHTb8Q7kNvwFbIasv&_nc_oc=AdqoOpOFnBqY66ROwVv4dBrD0ST5iO_2cHk_Qp2MhoVHomC3TUnOci8HXIR2OUSIJBE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fdvo2-2.fna&_nc_ss=7a32e&oh=03_Q7cD6wEgGJv6BBW5m9fEOS6V9NIJFsMy839V1RA2xRaVDGi_JQ&oe=6B2CC90B">
+            <div class="polaroid-frame"
+              style="--img:url('https://scontent.fdvo2-2.fna.fbcdn.net/v/t1.15752-9/930584853_1119663747342714_5051011891359812370_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_ohc=DB7v7UYHTb8Q7kNvwFbIasv&_nc_oc=AdqoOpOFnBqY66ROwVv4dBrD0ST5iO_2cHk_Qp2MhoVHomC3TUnOci8HXIR2OUSIJBE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fdvo2-2.fna&_nc_ss=7a32e&oh=03_Q7cD6wEgGJv6BBW5m9fEOS6V9NIJFsMy839V1RA2xRaVDGi_JQ&oe=6B2CC90B')">
+              <span class="placeholder-heart"></span>
+              <span class="polaroid-badge"></span>
+            </div>
+          </figure>
+
+          <!-- Photo 5 -->
+          <figure class="polaroid"
+            data-full="https://scontent.fdvo2-1.fna.fbcdn.net/v/t1.15752-9/927526484_1202079845715625_881098222833124861_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_ohc=tjgflgDuK24Q7kNvwHWbSxL&_nc_oc=AdqasqY5QzJqszCH8FgWCF9AalayzQsCHA_P9wHyMQH9R-i179wTf8Jy_vJ75w0QnUY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&_nc_ss=7a32e&oh=03_Q7cD6wGpc8WoIdDxx_JRGZSzWs3KxUl3BNn3D-3pIK-yqAtOIQ&oe=6B2CF7D4">
+            <div class="polaroid-frame"
+              style="--img:url('https://scontent.fdvo2-1.fna.fbcdn.net/v/t1.15752-9/927526484_1202079845715625_881098222833124861_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_ohc=tjgflgDuK24Q7kNvwHWbSxL&_nc_oc=AdqasqY5QzJqszCH8FgWCF9AalayzQsCHA_P9wHyMQH9R-i179wTf8Jy_vJ75w0QnUY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&_nc_ss=7a32e&oh=03_Q7cD6wGpc8WoIdDxx_JRGZSzWs3KxUl3BNn3D-3pIK-yqAtOIQ&oe=6B2CF7D4')">
+              <span class="placeholder-heart"></span>
+              <span class="polaroid-badge"></span>
+            </div>
+          </figure>
+
+          <!-- Photo 6 (Ready for your new photo) -->
+          <figure class="polaroid"
+            data-full="https://scontent.fdvo2-1.fna.fbcdn.net/v/t1.15752-9/926945552_1121737843958516_880307391707240943_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_ohc=ZZyx1r_r9qUQ7kNvwGY7blP&_nc_oc=AdrRjb1FJ7t_ddq7Sy-7zKf6GrGxRCZP1Ge7X63MLoEbWHX8lnZGZqonoINzGPBsG10&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&_nc_ss=7a32e&oh=03_Q7cD6wFOvhJR-s2AdMxE8CY-HhkFkXMCHA6NQWRfhJx5Ba05hQ&oe=6B2CD831">
+            <div class="polaroid-frame"
+              style="--img:url('https://scontent.fdvo2-1.fna.fbcdn.net/v/t1.15752-9/926945552_1121737843958516_880307391707240943_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_ohc=ZZyx1r_r9qUQ7kNvwGY7blP&_nc_oc=AdrRjb1FJ7t_ddq7Sy-7zKf6GrGxRCZP1Ge7X63MLoEbWHX8lnZGZqonoINzGPBsG10&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&_nc_ss=7a32e&oh=03_Q7cD6wFOvhJR-s2AdMxE8CY-HhkFkXMCHA6NQWRfhJx5Ba05hQ&oe=6B2CD831')">
+              <span class="placeholder-heart"></span>
+              <span class="polaroid-badge"></span>
+            </div>
+          </figure>
+
+          <!-- Photo 7 (Ready for your new photo) -->
+          <figure class="polaroid"
+            data-full="https://scontent.fdvo2-1.fna.fbcdn.net/v/t1.15752-9/928731049_2160697471319130_419137917224871537_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_ohc=uC2ruTKT13IQ7kNvwFZRlAO&_nc_oc=AdoClx8e238OYhOaRiBqcmG0RNE8J4Yh-gJsBJlCSa5Sx6Hi5VgOcfN4V0oWr0DhxcY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&_nc_ss=7a32e&oh=03_Q7cD6wGFoEPSmKl-WvwfQmmY-YrQzIG-Tk6MxJusf363khPspg&oe=6B2CE556">
+            <div class="polaroid-frame"
+              style="--img:url('https://scontent.fdvo2-1.fna.fbcdn.net/v/t1.15752-9/928731049_2160697471319130_419137917224871537_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_ohc=uC2ruTKT13IQ7kNvwFZRlAO&_nc_oc=AdoClx8e238OYhOaRiBqcmG0RNE8J4Yh-gJsBJlCSa5Sx6Hi5VgOcfN4V0oWr0DhxcY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&_nc_ss=7a32e&oh=03_Q7cD6wGFoEPSmKl-WvwfQmmY-YrQzIG-Tk6MxJusf363khPspg&oe=6B2CE556')">
+              <span class="placeholder-heart"></span>
+              <span class="polaroid-badge"></span>
+            </div>
+          </figure>
+
+          <!-- Photo 8 (Ready for your new photo) -->
+          <figure class="polaroid"
+            data-full="https://scontent.fdvo2-1.fna.fbcdn.net/v/t1.15752-9/929798254_1422119930003765_1253105907211689151_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Hldz0BGlJFcQ7kNvwE0nut5&_nc_oc=Adqig3CEOUqcTHJn1_BcZpdASAmmOa_z1_IbqrkjGmLzlHjRSfUYT75IKzYTJfAqZqY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&_nc_ss=7a32e&oh=03_Q7cD6wEkgV2O30sg3d8CSkxEMNxsid5NKfLp_scvN9VwdwxisQ&oe=6B2CD07F">
+            <div class="polaroid-frame"
+              style="--img:url('https://scontent.fdvo2-1.fna.fbcdn.net/v/t1.15752-9/929798254_1422119930003765_1253105907211689151_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Hldz0BGlJFcQ7kNvwE0nut5&_nc_oc=Adqig3CEOUqcTHJn1_BcZpdASAmmOa_z1_IbqrkjGmLzlHjRSfUYT75IKzYTJfAqZqY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&_nc_ss=7a32e&oh=03_Q7cD6wEkgV2O30sg3d8CSkxEMNxsid5NKfLp_scvN9VwdwxisQ&oe=6B2CD07F')">
+              <span class="placeholder-heart"></span>
+              <span class="polaroid-badge"></span>
+            </div>
+          </figure>
+
+
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===================== 2. DEDICATED LOVE LETTER MODAL ===================== -->
+  <div class="modal-container" id="letterModal">
+    <div class="modal-backdrop" id="letterBackdrop"></div>
+    <section class="modal-panel letter-panel">
+      <button class="close-btn" id="closeLetterBtn" aria-label="Isira">✕</button>
+
+      <div class="letter-content">
+
+        <div class="letter-body">
+          <p class="letter-text">I am so happy to have found you, and even happier to spend the rest of our lives
+            together.</p>
+          <p class="letter-text">Through every up and down, I will always love you more each day.</p>
+        </div>
+        <div class="letter-footer">
+          <div class="letter-sign">Happy Anniversary, Baby!</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===================== 3. LIGHTBOX FULL PHOTO ZOOM ===================== -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-close" id="lightboxClose">✕</div>
+    <div class="lightbox-img-wrap" id="lightboxWrap">
+      <img id="lightboxImg" src="" alt="Enlarged photo">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <script>
+    // 1. Video and Audio controls
+    const video = document.getElementById('bloomVideo');
+    const bgMusic = document.getElementById('bgMusic');
+    const soundBtn = document.getElementById('soundBtn');
+    const flowerCard = document.getElementById('flowerCard');
+
+    flowerCard.addEventListener('click', () => {
+      video.currentTime = 0;
+      video.play();
+    });
+
+    soundBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const icon = soundBtn.querySelector('.sound-icon');
+      const text = soundBtn.querySelector('.sound-text');
+      if (bgMusic.paused) {
+        bgMusic.play();
+        if (icon) icon.textContent = '🔊';
+        if (text) text.textContent = 'Playing';
+        soundBtn.classList.add('active');
+      } else {
+        bgMusic.pause();
+        if (icon) icon.textContent = '🔇';
+        if (text) text.textContent = 'Audio';
+        soundBtn.classList.remove('active');
+      }
+    });
+
+    // 2. Modals Management (Gallery & Letter)
+    const galleryModal = document.getElementById('galleryModal');
+    const letterModal = document.getElementById('letterModal');
+    const openGalBtn = document.getElementById('openGalBtn');
+    const openLetterBtn = document.getElementById('openLetterBtn');
+    const closeGalBtn = document.getElementById('closeGalBtn');
+    const closeLetterBtn = document.getElementById('closeLetterBtn');
+    const galBackdrop = document.getElementById('galBackdrop');
+    const letterBackdrop = document.getElementById('letterBackdrop');
+
+    function openModal(modal) {
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(modal) {
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // Open events
+    openGalBtn.addEventListener('click', () => openModal(galleryModal));
+    openLetterBtn.addEventListener('click', () => openModal(letterModal));
+
+    // Close events
+    closeGalBtn.addEventListener('click', () => closeModal(galleryModal));
+    galBackdrop.addEventListener('click', () => closeModal(galleryModal));
+
+    closeLetterBtn.addEventListener('click', () => closeModal(letterModal));
+    letterBackdrop.addEventListener('click', () => closeModal(letterModal));
+
+    // 3. Lightbox Full-Size Image Preview
+    const lightboxModal = document.getElementById('lightboxModal');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const polaroids = document.querySelectorAll('.polaroid');
+
+    polaroids.forEach((card) => {
+      card.addEventListener('click', () => {
+        const fullSrc = card.getAttribute('data-full');
+        const caption = card.querySelector('figcaption')?.textContent || '';
+
+        // If it's a valid link or image
+        if (fullSrc && (fullSrc.startsWith('http') || fullSrc.endsWith('.jpg') || fullSrc.endsWith('.png'))) {
+          lightboxImg.src = fullSrc;
+          lightboxCaption.textContent = caption;
+          lightboxModal.classList.add('active');
+        }
+      });
+    });
+
+    lightboxClose.addEventListener('click', () => {
+      lightboxModal.classList.remove('active');
+    });
+
+    lightboxModal.addEventListener('click', (e) => {
+      if (e.target === lightboxModal) {
+        lightboxModal.classList.remove('active');
+      }
+    });
+
+    // Close on Escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if (lightboxModal.classList.contains('active')) {
+          lightboxModal.classList.remove('active');
+        } else {
+          closeModal(galleryModal);
+          closeModal(letterModal);
+        }
+      }
+    });
+  </script>
+
+</body>
+
+</html>
